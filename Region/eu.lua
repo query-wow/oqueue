@@ -1,35 +1,26 @@
 ﻿local addonName, OQ = ...
 
-if (string.sub(GetCVar('realmList'), 1, 2) ~= 'hu') then
+if (string.sub(GetCVar('realmList'), 1, 2) ~= 'eu') then
     return
 end
 
-OQ.REGION = 'hu'
+OQ.REGION = 'eu'
 OQ.DEFAULT_PREMADE_TEXT = ''
 
 OQ.REALMS = {
     -- Those 3 are only used to get realm ID from GetRealmName()
-    ['[EN] Evermoon'] = 'evermoon',
-    ['[HU] Tauri WoW Server'] = 'tauri',
-    ['[HU] Warriors of Darkness'] = 'wod',
+    ['Mistblade'] = 'evermoon',
+
 
     -- Those are actually used
-    ['evermoon'] = 1,
-    ['tauri'] = 2,
-    ['wod'] = 3,
-    [1] = 'evermoon',
-    [2] = 'tauri',
-    [3] = 'wod'
+    ['Mistblade'] = 1,
+    [1] = 'Mistblade',
 }
 
 -- Used for whispers, invites etc.
 OQ.REALMNAMES_SHORTCUTS = {
-    ['[EN] Evermoon'] = "evermoon", -- [1]
-    ['[HU] Tauri WoW Server'] = "tauri", -- [2]
-    ['[HU] Warriors of Darkness'] = "wod", -- [3]
-    [1] = 'evermoon',
-    [2] = 'tauri',
-    [3] = 'wod'
+    ['Mistblade'] = "Mistblade", -- [1]
+    [1] = 'Mistblade'
 }
 
 OQ.gbl = {}
