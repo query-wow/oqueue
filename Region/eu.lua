@@ -14,7 +14,7 @@ OQ.REALMS = {
 
     -- Those are actually used
     ['Mistblade'] = 1,
-    [1] = 'Mistblade',
+    [1] = 'Mistblade'
 }
 
 -- Used for whispers, invites etc.
